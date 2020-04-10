@@ -1,2 +1,17 @@
-<h1>Courses#index</h1>
-<p>Find me in app/views/courses/index.html.erb</p>
+<h1 class="text-center">Courses Listings</h1>
+
+<div class="row">
+  <% @courses.each do |course| %>
+    <div class="card col-sm-4">
+      <div class="card-body">
+        <h5 class="card-title"><%= course.short_name %></h5>
+        <h6 class="card-subtitle mb-2 text-muted"><%= course.name %></h6>
+        <p class="card-text"><%= course.description %>.</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">Enroll</a>
+        <a href="#" class="card-link">Info</a>
+      </div>
+    </div>
+  <% end %>
+</div>

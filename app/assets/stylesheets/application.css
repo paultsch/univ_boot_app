@@ -14,3 +14,11 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  min-height: 100vh;
+}
+
+.flex-grow {
+   flex: 1;
+}
